@@ -27,14 +27,14 @@ class Var:
         if len(sys.argv) > 2
         else config("API_HASH", default="39479f774ad8b88cff552290cfbd7b13")
     )
-    SESSION = sys.argv[3] if len(sys.argv) > 3 else config("SESSION", default=None)
+    SESSION = sys.argv[3] if len(sys.argv) > 3 else config("SESSION", default="1BVtsOKoBuxNmTI4OewSvRDy2HNUBRLuA6DFxRnhgiYvW-0k5BhUz2EOGeYVmbLLk9WYutzTWYP42BkTLF8Gqnqxgh_8OHgPjuowWOP-WhsGThqmPpNRxqg24NxjTul1pHdwmzSYalnrITdH6ZGc8eaG2IXXHjjW46HF3q1HgQYGWXtX3-ycC31Gj_PrCEq-qz9IzBVnyqSocucSHa4PqWsw2fOgD7rwlb5Yl00hAKTKUktXnzAyhRJSHnFVSjbxFi7t9lPjAuD40t40lQukcDx44ayFDgKXx72CzM463VZ1A7bRsLxSwph30ghH_J8zkHZMasuDZ6XpOEHMswVcH5FSBU5qJWQY=")
     REDIS_URI = (
         sys.argv[4]
         if len(sys.argv) > 4
-        else (config("REDIS_URI", default=redis-18143.c326.us-east-1-3.ec2.cloud.redislabs.com:18143) or config("REDIS_URL", default=None))
+        else (config("REDIS_URI", default="redis-18143.c326.us-east-1-3.ec2.cloud.redislabs.com:18143) or config("REDIS_URL", default=None"))
     )
     REDIS_PASSWORD = (
-        sys.argv[5] if len(sys.argv) > 5 else config("REDIS_PASSWORD", default=RTYyiiEvKW1AeiGen5yUR7OYDbm5HRn2)
+        sys.argv[5] if len(sys.argv) > 5 else config("REDIS_PASSWORD", default="RTYyiiEvKW1AeiGen5yUR7OYDbm5HRn2")
     )
     # extras
     BOT_TOKEN = config("BOT_TOKEN", default=None)

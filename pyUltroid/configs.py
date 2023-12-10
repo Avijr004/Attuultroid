@@ -31,7 +31,7 @@ class Var:
     REDIS_URI = (
         sys.argv[4]
         if len(sys.argv) > 4
-        else (config("REDIS_URI", default="redis-18143.c326.us-east-1-3.ec2.cloud.redislabs.com:18143") or config("REDIS_URL", default=None"))
+        else (config("REDIS_URI", default="redis-18143.c326.us-east-1-3.ec2.cloud.redislabs.com:18143") or config("REDIS_URL", default=None))
     )
     REDIS_PASSWORD = (
         sys.argv[5] if len(sys.argv) > 5 else config("REDIS_PASSWORD", default="RTYyiiEvKW1AeiGen5yUR7OYDbm5HRn2")

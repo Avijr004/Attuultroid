@@ -20,21 +20,21 @@ except ImportError:
 class Var:
     # mandatory
     API_ID = (
-        int(sys.argv[1]) if len(sys.argv) > 1 else config("API_ID", default=6, cast=int)
+        int(sys.argv[1]) if len(sys.argv) > 1 else config("API_ID", default=7929680, cast=int)
     )
     API_HASH = (
         sys.argv[2]
         if len(sys.argv) > 2
-        else config("API_HASH", default="eb06d4abfb49dc3eeb1aeb98ae0f581e")
+        else config("API_HASH", default="39479f774ad8b88cff552290cfbd7b13")
     )
     SESSION = sys.argv[3] if len(sys.argv) > 3 else config("SESSION", default=None)
     REDIS_URI = (
         sys.argv[4]
         if len(sys.argv) > 4
-        else (config("REDIS_URI", default=None) or config("REDIS_URL", default=None))
+        else (config("REDIS_URI", default=redis-18143.c326.us-east-1-3.ec2.cloud.redislabs.com:18143) or config("REDIS_URL", default=None))
     )
     REDIS_PASSWORD = (
-        sys.argv[5] if len(sys.argv) > 5 else config("REDIS_PASSWORD", default=None)
+        sys.argv[5] if len(sys.argv) > 5 else config("REDIS_PASSWORD", default=RTYyiiEvKW1AeiGen5yUR7OYDbm5HRn2)
     )
     # extras
     BOT_TOKEN = config("BOT_TOKEN", default=None)
